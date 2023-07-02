@@ -1,0 +1,183 @@
+@charset "UTF-8";
+html {
+  font-size: 16px;
+}
+
+code:not([class]) {
+  background-color: rgba(33, 90, 160, 0.0705882353);
+  color: #300;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.3rem;
+}
+
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  color: #300;
+  background-color: #369;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  margin-left: 0.4rem;
+}
+
+h4 {
+  margin-left: 0.8rem;
+}
+
+h5 {
+  margin-left: 1.2rem;
+}
+
+h6 {
+  margin-left: 1.6rem;
+}
+
+p {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+ul, ol {
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid gray;
+  padding: 0.2rem 0.4rem;
+}
+
+th {
+  background-color: #369;
+  color: #fff;
+}
+
+.ly_header,
+.ly_main,
+.ly_footer {
+  width: 100%;
+}
+
+.ly_header,
+.ly_footer {
+  color: #fff;
+  background-color: #369;
+}
+
+.ly_main {
+  color: #300;
+  background-color: #fff;
+}
+
+.ly_header_inner,
+.ly_main_inner,
+.ly_footer_inner {
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem;
+}
+
+.ly_post_article {
+  width: 100%;
+}
+
+.ly_post_datetimes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.global_head {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.global_head_anchor {
+  text-decoration: none;
+  color: #fff;
+}
+
+.global_head_catchphrase {
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.ob_post_title {
+  font-family: "Times New Roman", "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho", serif;
+  font-size: 1.5rem;
+  border-bottom: 1px double gray;
+}
+
+.ob_post_datetime {
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
+
+/*
+  index.html 投稿一覧
+*/
+.post_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  gap: 1rem;
+}
+
+.post_list__item {
+  list-style-type: none;
+  width: 20rem;
+  height: 10rem;
+  overflow-y: hidden;
+  padding: 1rem;
+  border: 2px solid gray;
+  border-radius: 1rem;
+}
+
+.post_list__item_date {
+  font-size: 0.8rem;
+  font-style: italic;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,32 @@
+@use "../variables/font" as font;
+@use "../variables/colors" as color;
+@use "../mixin/common" as mixin;
+/*
+  index.html 投稿一覧
+*/
+@mixin flex_card_list() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1rem;
+}
+
+.post_list {
+  @include flex_card_list();
+
+}
+.post_list__item {
+  list-style-type: none;
+  width: 20rem;
+  height: 10rem;
+  overflow-y: hidden;
+  padding: 1rem;
+  border: 2px solid gray;
+  border-radius: 1rem;
+}
+.post_list__item_date {
+  font-size: 0.8rem;
+  font-style: italic;
+}

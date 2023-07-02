@@ -1,0 +1,11 @@
+@use "../variables/font" as Font;
+@use "../mixin/common" as Mixin;
+
+.ly_post_article {
+  width: 100%;
+}
+
+.ly_post_datetimes {
+  @include Mixin.flex_default_setting();
+  justify-content: flex-end;
+}

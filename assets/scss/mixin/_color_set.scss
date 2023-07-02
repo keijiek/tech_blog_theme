@@ -1,0 +1,21 @@
+@use "../variables/colors" as Color;
+
+@mixin body_color_set() {
+  color: Color.$main_font;
+  background-color: Color.$secondary_bg;
+}
+
+@mixin main_color_set() {
+  color: Color.$main_font;
+  background-color: Color.$main_bg;
+}
+
+@mixin header_color_set() {
+  color: Color.$secondary_font;
+  background-color: Color.$secondary_bg;
+}
+
+@mixin one_line_code_color_set() {
+  background-color: Color.$one_line_code_bg;
+  color: Color.$one_line_code_font;
+}

@@ -1,0 +1,24 @@
+@use "../mixin/common" as Mixin;
+@use "../mixin/color_set" as ColorSet;
+
+.ly_header,
+.ly_main,
+.ly_footer {
+  width: 100%;
+}
+
+// 同一の粒度なので、色も指定。
+.ly_header,
+.ly_footer {
+  @include ColorSet.header_color_set();
+}
+.ly_main {
+  @include ColorSet.main_color_set();
+}
+
+// inner
+.ly_header_inner,
+.ly_main_inner,
+.ly_footer_inner {
+  @include Mixin.width_limited_box(true);
+}

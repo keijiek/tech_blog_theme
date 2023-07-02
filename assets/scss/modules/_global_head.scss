@@ -1,0 +1,14 @@
+@use "../variables/colors" as Color;
+
+.global_head {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+.global_head_anchor {
+  text-decoration: none;
+  color: Color.$secondary_font;
+}
+.global_head_catchphrase {
+  font-style: italic;
+  opacity: 0.6;
+}

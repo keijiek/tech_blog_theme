@@ -1,0 +1,63 @@
+@use "../variables/colors" as Color;
+@use "../variables/font" as Font;
+@use "../mixin/color_set" as ColorSet;
+
+html {
+  font-size: 16px;
+}
+
+// class 属性を持たない <code>に限定。md形式で記述した``の中の文字列(1行のコード)の装飾となる。コードブロック内でも code タグを使うので、全codeにスタイルを当てるわけにはいかないため。
+code:not([class]) {
+  @include ColorSet.one_line_code_color_set();
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.3rem;
+  padding: 0.1rem 0.3rem;
+}
+
+body {
+  font-family: Font.$sans_serif_family;
+  @include ColorSet.body_color_set();
+}
+
+// 見出し
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+h3 {
+  margin-left: 0.4rem;
+}
+h4 {
+  margin-left: 0.8rem;
+}
+h5 {
+  margin-left: 1.2rem;
+}
+h6 {
+  margin-left: 1.6rem;
+}
+p {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+// リスト
+ul, ol {
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+// テーブル (罫線と背景色と文字色、最低限の内部レイアウト)
+table {
+  border-collapse:  collapse;
+}
+th, td {
+  border: 1px solid gray;
+  padding: 0.2rem 0.4rem;
+}
+th {
+  background-color: Color.$secondary_bg;
+  color: Color.$secondary_font;
+}

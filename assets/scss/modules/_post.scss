@@ -1,0 +1,15 @@
+@use "../variables/font" as Font;
+@use "../variables/colors" as Color;
+
+// 投稿のタイトル h1
+.ob_post_title {
+  font-family: Font.$serif_family;
+  font-size: 1.5rem;
+  border-bottom: 1px double gray;
+}
+
+// 投稿日・更新日のスタイル
+.ob_post_datetime {
+  opacity: 0.8;
+  font-size: 0.8rem;
+}

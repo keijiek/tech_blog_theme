@@ -1,0 +1,32 @@
+@mixin width_limited_box($centralize:false, $max-width:1920px) {
+  max-width: $max-width;
+  @if($centralize) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  padding: 2rem;
+}
+
+@mixin flex_default_setting() {
+  display: flex;
+  flex-direction: row;// 方向: row(d), row-reverse, column, colum-reverse
+  flex-wrap: wrap;//折り返し: nowrap(d), wrap, wrap-reverse
+  justify-content: flex-start;//水平方向の揃え: flex-start(d), flex-end, center, space-between, space-around
+  align-items: stretch;//垂直方向の揃え: stretch(d), flex-start, flex-end, center, baseline
+  align-content: flex-start;//複数行の場合の揃え: stretch(d), flex-start, flex-end, center, space-between, space-around
+}
+
+@mixin centering_flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex_card_list() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 1rem;
+}

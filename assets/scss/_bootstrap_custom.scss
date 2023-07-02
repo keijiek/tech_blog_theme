@@ -1,0 +1,4 @@
+@use "../../node_modules/bootstrap/scss/bootstrap.scss" with (
+  $primary: #003,
+  $secondary: rgba(0, 0, 255, 1),
+);

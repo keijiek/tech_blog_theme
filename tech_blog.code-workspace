@@ -1,0 +1,40 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.trimAutoWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "liveSassCompile.settings.formats":[
+      {
+          "format": "expanded",
+          "extensionName": ".css",
+          "savePath": "/assets/css"
+      },
+      {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "/assets/css"
+      }
+    ],
+    "liveSassCompile.settings.excludeList": [
+      "/**/node_modules/**",
+      "/.vscode/**",
+      "/.git/**"
+    ],
+    "liveSassCompile.settings.includeItems": [
+      "/assets/scss/style.scss"
+    ],
+    "liveSassCompile.settings.autoprefix": [
+      "> 0.5%",
+      "last 2 versions"
+    ],
+    "liveSassCompile.settings.generateMap": true
+  }
+}
