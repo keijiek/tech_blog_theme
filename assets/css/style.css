@@ -177,6 +177,31 @@ th {
   border-radius: 1rem;
 }
 
+.post_list__item_title {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.post_list__item_date_set {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
 .post_list__item_date {
   font-size: 0.8rem;
   font-style: italic;

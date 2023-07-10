@@ -26,6 +26,15 @@
   border: 2px solid gray;
   border-radius: 1rem;
 }
+// 投稿一覧 > 個別アイテムの見出し
+.post_list__item_title {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.post_list__item_date_set{
+  @include mixin.flex_default_setting();
+}
 .post_list__item_date {
   font-size: 0.8rem;
   font-style: italic;

@@ -35,6 +35,7 @@
       "> 0.5%",
       "last 2 versions"
     ],
-    "liveSassCompile.settings.generateMap": true
+    "liveSassCompile.settings.generateMap": true,
+    "liveSassCompile.settings.compileOnWatch": true
   }
 }

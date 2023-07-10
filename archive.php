@@ -26,7 +26,13 @@ if(have_posts()) {
     if(get_post_status()==='publish') {
 ?>
   <div>
-  <a href="<?= the_permalink($post) ?>"><?= the_title() ?></a>
+    <a href="<?= the_permalink($post) ?>"><?= the_title() ?></a>
+    <span>
+      更新:&nbsp;<time datetime="<?= get_the_modified_date("Y-m-d") ?>"><?= get_the_modified_date()?></time>
+    </span>
+    <span>
+      投稿:&nbsp;<time datetime="<?= get_the_date("Y-m-d") ?>"><?= get_the_date() ?></time>
+    </span>
   </div>
   <div>
 
