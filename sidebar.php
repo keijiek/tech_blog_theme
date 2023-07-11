@@ -1,4 +1,4 @@
-<section class="ly_sidebar">
+<aside class="ly_sidebar">
   <h2>カテゴリ</h2>
   <nav>
     <ul>
@@ -6,4 +6,4 @@
     </ul>
   </nav>
 
-</section>
+</aside>
