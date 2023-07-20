@@ -1,7 +1,2 @@
 @charset "utf8";
-@use "./base/base";
-@use "./layout/ly_landmarks";
-@use "./layout/ly_post";
-@use "./modules/global_head";
-@use "./modules/post";
-@use "./modules/top_page_post_list";
+@use "./bootstrap_custom";
